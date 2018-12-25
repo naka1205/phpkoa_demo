@@ -35,13 +35,15 @@ $router->post('/files', function(Context $ctx, $next) use ($public_path) {
         mkdir ($save_path , 0777, true);
     }
     $files = [];
-    foreach ( $ctx->request->files as $key => $value) {
+    foreach ( $ctx->request->files as $key => $value ) {
         if ( !$value['file_name'] || !$value['file_data'] ) {
             continue;
         }
-        $file_path = $save_path . $value['file_name'];
+        $ext = explode(".",$value['file_name'])[1]; 
+        $file_name = time() . "." . $ext;
+        $file_path = $save_path . $file_name;
         file_put_contents($file_path, $value['file_data']);
-        $value['file_path'] = "/" . $upload_path . "/" . $value['file_name'] ;
+        $value['file_path'] = "/" . $upload_path . "/" . $file_name;
         unset($value['file_data']);
         $files[] = $value;
     }
