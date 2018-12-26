@@ -22,8 +22,21 @@ $app->υse(new StaticFiles( $public_path ));
 $router = new Router();
 
 $router->get('/index', function(Context $ctx, $next) {
+    $ctx->setCookie('demo','PHPKoa Cookie');
+    $ctx->setSession('demo','PHPKoa Session');
     $ctx->status = 200;
+    
     yield $ctx->render(__DIR__ . "/template/index.html");
+});
+
+
+$router->get('/demo', function(Context $ctx, $next) {
+    $cookie = $ctx->getCookie('demo');
+    $session = $ctx->getSession('demo');
+    $ctx->status = 200;
+    $ctx->state["cookie"] = $cookie;
+    $ctx->state["session"] = $session;
+    yield $ctx->render(__DIR__ . "/template/demo.html");
 });
 
 //文件上传

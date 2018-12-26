@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6798fae420a6466091a37a4aa671e19",
+    "content-hash": "4029db9b56b8b68f6fa951ebcd65f3ec",
     "packages": [
         {
             "name": "naka1205/phpkoa",
-            "version": "v1.7",
+            "version": "v1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/naka1205/phpkoa.git",
-                "reference": "7aed1b1b815ea68b030e1c3f2688f21dd7eaca26"
+                "reference": "893a327be646a6771ee1821c9c7b8fb47cce1949"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/naka1205/phpkoa/zipball/7aed1b1b815ea68b030e1c3f2688f21dd7eaca26",
-                "reference": "7aed1b1b815ea68b030e1c3f2688f21dd7eaca26",
+                "url": "https://api.github.com/repos/naka1205/phpkoa/zipball/893a327be646a6771ee1821c9c7b8fb47cce1949",
+                "reference": "893a327be646a6771ee1821c9c7b8fb47cce1949",
                 "shasum": ""
             },
             "require": {
                 "naka1205/phpkoa_static": "^1.1",
-                "naka1205/phpsocket": "^1.7",
+                "naka1205/phpsocket": "^1.8",
                 "php": ">=5.4"
             },
             "type": "library",
@@ -45,7 +45,7 @@
                 }
             ],
             "description": "php koa",
-            "time": "2018-12-25T14:07:57+00:00"
+            "time": "2018-12-26T13:27:08+00:00"
         },
         {
             "name": "naka1205/phpkoa_static",
@@ -82,16 +82,16 @@
         },
         {
             "name": "naka1205/phpsocket",
-            "version": "v1.7",
+            "version": "v1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/naka1205/phpsocket.git",
-                "reference": "17bab1dc9ed3da0e16e1862c5c9bae4a440b096c"
+                "reference": "409ef2a5a5e2a334a666968bd5994c8bf3d957b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/naka1205/phpsocket/zipball/17bab1dc9ed3da0e16e1862c5c9bae4a440b096c",
-                "reference": "17bab1dc9ed3da0e16e1862c5c9bae4a440b096c",
+                "url": "https://api.github.com/repos/naka1205/phpsocket/zipball/409ef2a5a5e2a334a666968bd5994c8bf3d957b0",
+                "reference": "409ef2a5a5e2a334a666968bd5994c8bf3d957b0",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
                 }
             ],
             "description": "php socket",
-            "time": "2018-12-25T13:58:04+00:00"
+            "time": "2018-12-26T13:00:13+00:00"
         }
     ],
     "packages-dev": [],

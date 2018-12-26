@@ -1,6 +1,6 @@
 {
     "require": {
         "naka1205/phpkoa_static": "^1.1",
-        "naka1205/phpkoa": "^1.7"
+        "naka1205/phpkoa": "^1.8"
     }
 }
