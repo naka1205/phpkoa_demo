@@ -23,6 +23,7 @@ php app.php
 ```
 composer require topthink/think-orm
 ```
+创建 MYSQL 数据表
 ```mysql
 CREATE TABLE `too_user` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户ID',
@@ -35,16 +36,17 @@ CREATE TABLE `too_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+自定义数据模型
 ```php
 <?php
 namespace Models;
 use think\Model;
 class User extends Model
 {
-
 }
 ```
 自定义 JSON响应 中间件
+中间件会根据是否存在数据 响应不同的数据 并进行JSON格式化
 ```php
 <?php
 namespace Middlewares;
@@ -52,12 +54,8 @@ use Naka507\Koa\Middleware;
 use Naka507\Koa\Context;
 class BodyJson implements Middleware
 {
-    public $type;
-
     public function __construct(){
-
     }
-
     public function __invoke(Context $ctx, $next){
         yield $next;
         $pos = strpos($ctx->accept,'json');
@@ -76,7 +74,7 @@ class BodyJson implements Middleware
     }
 }
 ```
-中间件 会根据是否存在数据 响应不同的数据
+动态模板 使用JQ 进行AJAX 请求
 ```html
 <body>
     <h1>/api/user/{id}</h1>
@@ -88,8 +86,13 @@ $.ajax({
     type: "GET",
     url: "/api/user/" + id,
     dataType: "json",
-    success: function(data){
-        $("#user").html(JSON.stringify(data))
+    success: function(res){
+        if( res.code == 200 ){
+            $("#user").html(JSON.stringify(res.data))
+        }else{
+            $("#user").html(res.msg)
+        }
+        
     }
 });
 </script>
