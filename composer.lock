@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4029db9b56b8b68f6fa951ebcd65f3ec",
+    "content-hash": "97e48eabbee65716acf37bd03d4a8c1b",
     "packages": [
         {
             "name": "naka1205/phpkoa",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/naka1205/phpkoa.git",
-                "reference": "893a327be646a6771ee1821c9c7b8fb47cce1949"
+                "reference": "83bca1fdc2b521216c048f7408dd5a3b51a90099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/naka1205/phpkoa/zipball/893a327be646a6771ee1821c9c7b8fb47cce1949",
-                "reference": "893a327be646a6771ee1821c9c7b8fb47cce1949",
+                "url": "https://api.github.com/repos/naka1205/phpkoa/zipball/83bca1fdc2b521216c048f7408dd5a3b51a90099",
+                "reference": "83bca1fdc2b521216c048f7408dd5a3b51a90099",
                 "shasum": ""
             },
             "require": {
@@ -82,16 +82,16 @@
         },
         {
             "name": "naka1205/phpsocket",
-            "version": "v1.8",
+            "version": "v1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/naka1205/phpsocket.git",
-                "reference": "409ef2a5a5e2a334a666968bd5994c8bf3d957b0"
+                "reference": "05a5490531170c946fede66635feda77f21801a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/naka1205/phpsocket/zipball/409ef2a5a5e2a334a666968bd5994c8bf3d957b0",
-                "reference": "409ef2a5a5e2a334a666968bd5994c8bf3d957b0",
+                "url": "https://api.github.com/repos/naka1205/phpsocket/zipball/05a5490531170c946fede66635feda77f21801a0",
+                "reference": "05a5490531170c946fede66635feda77f21801a0",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,46 @@
                 }
             ],
             "description": "php socket",
-            "time": "2018-12-26T13:00:13+00:00"
+            "time": "2018-12-29T03:25:18+00:00"
+        },
+        {
+            "name": "topthink/think-orm",
+            "version": "v1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-orm.git",
+                "reference": "cea914089abe31256a52ae90b16680ad4ca4f1bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-orm/zipball/cea914089abe31256a52ae90b16680ad4ca4f1bd",
+                "reference": "cea914089abe31256a52ae90b16680ad4ca4f1bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "think\\": "src"
+                },
+                "files": [
+                    "src/config.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "liu21st",
+                    "email": "liu21st@gmail.com"
+                }
+            ],
+            "description": "think orm",
+            "time": "2018-12-25T06:27:02+00:00"
         }
     ],
     "packages-dev": [],
